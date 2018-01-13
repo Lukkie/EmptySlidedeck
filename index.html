@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="styles/screen-16x10.css">
 	<link rel="stylesheet" href="styles/custom.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="shower list">
 	<header class="caption">
@@ -55,9 +56,189 @@
 	<section class="slide">
 		<h2>Decentralization of annotation systems</h2>
 		<ul>
+			<li class="next">
+				By using Linked Data principles, decentralization can be achieved.
+				<ul class="next">
+					<li>
+						Solid for storage and CRUD operations
+					</li>
+					<li>
+						Linked Data Notifications
+					</li>
+				</ul>
+			</li>
+			<li class="next">
+				Biggest source of inspiration: dokieli
+				<center>
+					<img src="images\dokieli-interactions.png">
+				</center>
+			</li>
 
 		</ul>
 	</section>
+
+	<section class="slide">
+		<h2>Research questions</h2>
+		<ul>
+			<li class="next">
+				“Is it possible to design a workflow to allow retrieval and storage of annotations, and sending/retrieving notifications about updates in a fully decentralized manner, using Linked Data principles?”
+				<p class="next" style="margin: 16px 32px 32px; font-size: 0.8em;">
+				  <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> &nbsp; Most challenging: notifying the inbox of a server, and how the server should process this.
+				</p>
+				<!-- <ul>
+					<li class="next">
+						Most challenging: notifying the inbox of a server, and how the server should process this.
+					</li>
+				</ul> -->
+			</li>
+			<li class="next">
+				“Can this workflow be simplified by providing a JavaScript library that generically implements decentralized annotation functionality, and can easily be added to existing annotation systems?”
+			</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Research questions</h2>
+		<ul>
+			<li>
+				Possibly: “Would this library benefit from a Linked Data Notifications library that implements the LDN standards? If this does not exist, is it worth it to write it yourself?”
+			</li>
+			<li class="next">
+				<strong>How do I measure this?</strong>
+			</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Hypothesis</h2>
+		<ul>
+			<li class="next">
+				“Can decentralized storage of annotations be implemented in an equally fast and easy to use manner compared to centralized annotations?”
+			</li>
+			<li class="next">
+				Again, <strong>how to quantify?</strong>
+				<ul>
+					<li class="next">
+						“Fast”: The user should not notice a difference
+					</li>
+					<li class="next">
+						"Easy to use":
+						<ul>
+							<li>
+								Creating an account on a website <-> Creating a WebID personal storage
+							</li>
+							<li>
+								Commenting anonymously <-> Writing to an open inbox
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Evaluation strategy</h2>
+		<ul>
+			<li class="next">
+				Open Webslides
+			</li>
+		</ul>
+
+		<br>
+		<p class="next">
+			<i class="fa fa-question" aria-hidden="true"></i> &nbsp; No idea how to quantify results of test setup...
+		</p>
+	</section>
+
+	<section class="slide">
+		<h2>Current progress</h2>
+		<ul>
+			<li class="next">
+				Related literature
+			</li>
+			<li class="next">
+				Analysis of Dokieli, Hypothesis and certain W3C recommendations
+				<ul class="next">
+					<li>
+						<a href="https://www.w3.org/TR/annotation-model/">Annotation Data Model</a>
+					</li>
+					<li>
+						<a href="https://www.w3.org/TR/ldn/">Linked Data Notifications</a>
+					</li>
+					<li>
+						<a href="https://www.w3.org/TR/ldp/">Linked Data Platform</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Current progress</h2>
+		<ul>
+			<li class="next">
+				Work-in-progress bookmarklet to test annotations locally
+				<ul>
+					<li class="next">
+						<strong>Solid</strong> for LDP
+					</li>
+					<li class="next">
+						<strong>Rangy</strong> for selection of text
+						<ul>
+							<li>
+								Should eventually be implementer’s choice
+							</li>
+							<li>
+								Planning on switching this to annotator.js, or using Feliciaan’s work?
+							</li>
+						</ul>
+					</li>
+					<li class="next">
+						<strong>MediumEditor</strong> for menu (~dokieli)
+					</li>
+				</ul>
+			</li>
+			<li class="next">
+				Demo. <!--(eventueel iets over architectuur, tonen van GUI, tonen hoe/waar opgeslagen)-->
+			</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Planning</h2>
+		<ul>
+			<li class="next">
+				<strong>January</strong>: Exams <i style="padding-left:32px" class="fa fa-meh-o" aria-hidden="true"></i>
+			</li>
+
+			<li class="next">
+				<strong>February – March/April</strong>: Implementing / coding
+			</li>
+
+			<li class="next">
+				<strong>April</strong>: Fine-tuning, testing
+			</li>
+
+			<li class="next">
+				<strong>April-May</strong>: Writing thesis
+			</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Questions</h2>
+		<ul>
+			<li>
+				First your questions
+			</li>
+
+			<li>
+				Some of my own questions if there is time left
+			</li>
+		</ul>
+	</section>
+
 
 	<div class="progress"></div>
 	<script src="scripts/shower.min.js"></script>
